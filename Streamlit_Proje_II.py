@@ -12,11 +12,24 @@ JPG_FILE="D:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\serce.jpg"
 # functions
 #@st.cache()
 def Veri_Yukle():
+    """
     df = pd.read_csv(
-        #'https://github.com/chris1610/pbpython/blob/master/data/cereal_data.csv?raw=True'
-        CSV_FILE, sep=';')
+        #'https://github.com/nicknameisbogac/Streamlit_Project_II/blob/master/Serce_Egitim_Data.csv?raw=True', \
+        CSV_FILE, \
+        sep=';')
+    """
+    
+    """
+    df = pd.read_csv( \
+        'https://github.com/nicknameisbogac/Streamlit_Project_II/blob/master/Serce_Egitim_Data.csv', \
+        sep=';')
+    """
+    
+    df = pd.read_csv( \
+         'https://raw.githubusercontent.com/nicknameisbogac/Streamlit_Project_II/main/Serce_Egitim_Data.csv', \
+        sep=';')
     return df
-
+                     
 def Menu_Sakla():
     hide_streamlit_style = """
     <style>
@@ -43,6 +56,8 @@ def Menu_Sakla():
 def Menu_Olustur():
     Options_Tuple = ("Yayılım Grafikleri", "Bar Grafikleri")
     
+    """
+    #with Image.open(JPG_FILE) as Img:
     with Image.open(JPG_FILE) as Img:
         width, height = Img.size # get the image size...
         # Provide the target width and height of the image
@@ -50,7 +65,11 @@ def Menu_Olustur():
             width, height = 200, 200 # (im.width // 2, im.height // 2)
             Img_Resized = Img.resize((width, height))
     
+    
     st.sidebar.image(Img, use_column_width = True)
+    """
+    
+    
     st.sidebar.markdown("<h1 style='text-align: center; color: red;'>Serçe Eğitim Kurumu</h1>", unsafe_allow_html=True)    
     st.sidebar.markdown("<h1 style='text-align: center; color: red;'>Grafik Raporlama</h1>", unsafe_allow_html=True)    
     
@@ -115,4 +134,3 @@ def main():
 
 if __name__ == '__main__':
     main() 
-
