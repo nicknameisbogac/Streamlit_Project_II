@@ -4,8 +4,8 @@ import pandas as pd
 import plotly.express as px
 from PIL import Image
 
-CSV_FILE="D:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\Serce_Egitim_Data.csv"
-JPG_FILE="D:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\serce.jpg"
+#CSV_FILE="D:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\Serce_Egitim_Data.csv"
+#JPG_FILE="D:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\serce.jpg"
 #CSV_FILE=r"F:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\Serce_Egitim_Data.csv"
 #JPG_FILE=r"F:\\_Kunta_Kinte\\Streamlit\\Streamlit_Trainings\\serce.jpg"
 
